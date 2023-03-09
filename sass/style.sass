@@ -1,0 +1,98 @@
+.section
+  display: flex
+  justify-content: center
+  margin-top: 20px
+  &-container
+    width: 600px
+    min-height: 435px
+    background-color: #fff
+    border-radius: 10px
+    border: 1px solid #ccc
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1)
+  &-wrap
+    display: flex
+  &-search
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid
+    padding: 11px 16px
+    align-items: center
+    &__name
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 21px
+      color: #696969
+    &__icon
+      cursor: pointer
+  &-main__img--weather-type
+    display: flex
+    justify-content: center
+  &-main__img--favorite
+    display: flex
+    justify-content: space-between
+    img
+      cursor: pointer
+  &-main__name
+    &--favorite
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      color: #000000
+  &-main__menu
+    padding: 20px 26px
+    width: 298px
+    border-right: 1px solid
+    border-bottom: 1px solid
+  &-main__number
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 70px
+    line-height: 82px
+    color: #000000
+    margin-bottom: 41px
+  &-main__img--weather-type
+    margin-bottom: 78px
+  &-tabs
+    display: flex
+    &__item
+      border-right: 1px solid
+      padding: 12px 30px
+      font-size: 18px
+      border-radius: 0 0 0 10px
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      line-height: 21px
+      &:nth-child(2)
+        border-radius: 0
+      &:nth-child(3)
+        border-radius: 0
+        width: 13.6%
+        text-align: center
+      &:hover
+        background: black
+        color: white
+        cursor: pointer
+  &-right
+    &__title
+      margin-top: 30px
+      padding: 0 10px 10px 18px
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      border-bottom: 1px solid
+    &__city
+      margin-top: 35px
+      padding-left: 18px
+      li
+        padding-bottom: 14px
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 24px
+        color: #000000
+    &__menu
+      width: 250px
