@@ -4,7 +4,6 @@
   margin-top: 20px
   &-container
     width: 600px
-    min-height: 435px
     background-color: #fff
     border-radius: 10px
     border: 1px solid #ccc
@@ -96,3 +95,75 @@
         color: #000000
     &__menu
       width: 250px
+  &-one__none
+    display: none
+  &-name
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 24px
+    color: #000000
+    margin:
+      top: 30px
+      left: 17px
+      bottom: 44px
+  &-list__cities
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    color: #000000
+    margin-left: 35px
+    margin-bottom: 44px
+    li
+      padding-bottom: 25px
+      &:last-child
+        padding-bottom: 0
+  &-list__top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 38px
+  &-list__bottom
+    display: flex
+    justify-content: space-between
+  &-name__forecast
+    margin-bottom: 7px
+.wrap
+  display: flex
+.section-wrap__left
+  width: 50%
+  border-right: 1px solid black
+  border-bottom: 1px solid black
+.section-wrap__right
+  width: 50%
+.sec-tabs
+  width: 50%
+  display: flex
+  &__item
+    border: 1px solid black
+    width: 50%
+    text-align: center
+    padding: 12px 0
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 18px
+    color: #000000
+    cursor: pointer
+.active
+  background: #000000
+  color: #ffff
+.wrap-forecast
+  width: 265px
+  margin: 0 auto
+  border: 1px solid
+  padding: 6px 12px
+  font-family: 'Roboto'
+  font-weight: 400
+  font-size: 18px
+  color: #000000
+  margin-bottom: 10px
+.wrap-scroll
+  overflow-y: scroll
+  height: 255px
+  overflow-x: hidden
+  &::-webkit-scrollbar
+    width: 0
