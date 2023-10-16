@@ -1,0 +1,241 @@
+@charset "UTF-8";
+body {
+  background-color: #1e1f24;
+  color: #ffffff;
+  font-family: "Comfortaa", cursive;
+}
+
+.container {
+  display: flex;
+  margin: 25px;
+}
+
+.nav {
+  margin-right: 25px;
+}
+.nav__menu {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 55px;
+  background-color: #2e2e38;
+  height: calc(100vh - 50px);
+  padding: 20px 0;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+.nav__menu::-webkit-scrollbar {
+  width: 5px; /* ширина scrollbar */
+}
+.nav__menu__item {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+.nav__menu__item img {
+  width: 30px;
+}
+.nav__menu__item:first-child img {
+  border-radius: 20px;
+  width: 35px;
+}
+.nav__menu__item:last-child {
+  padding-bottom: 0;
+  margin-top: auto;
+}
+
+.section {
+  flex: 1;
+}
+
+.section-main__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-main__panel__title {
+  font-size: 20px;
+}
+.section-main__panel__group {
+  display: flex;
+  gap: 1rem;
+}
+.section-main__panel__group__search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #2f2f39;
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+}
+.section-main__panel__group__search__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.section-main__panel__group__search__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: grey;
+  font-family: "Comfortaa", cursive;
+}
+.section-main__panel__group__search__input::-moz-placeholder {
+  color: grey;
+}
+.section-main__panel__group__search__input::placeholder {
+  color: grey;
+}
+.section-main__panel__group__language {
+  display: flex;
+  align-items: center;
+}
+.section-main__panel__group__language select {
+  outline: none;
+  background: none;
+  border: none;
+  color: grey;
+  border: 1px solid #2f2f39;
+  padding: 10px;
+  width: 75px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #2f2f39;
+}
+.section-toggle {
+  display: flex;
+  position: relative;
+  width: 91px;
+  height: 40px;
+  border-radius: 100px;
+  background: rgb(47, 47, 57);
+  transition: background-color 0.2s;
+}
+
+.section-toggle input {
+  display: none;
+}
+
+.section-toggle #celsius:checked ~ .switch {
+  transform: translateX(45.3px);
+}
+
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 100px;
+  border-radius: 25px;
+  background: rgb(204, 234, 236);
+  transition: transform 0.3s;
+}
+
+label {
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  color: black;
+}
+
+.section-main__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 25px 77px;
+  margin-top: 25px;
+}
+.section-main__info > div {
+  min-height: 184px;
+  border-radius: 30px;
+  background: #2e2e38;
+}
+.section-main__info > div:nth-child(1), .section-main__info > div:nth-child(3) {
+  width: 60%;
+}
+.section-main__info > div:nth-child(2), .section-main__info > div:nth-child(4) {
+  width: 35%;
+}
+.section-main__info > div:nth-child(3), .section-main__info > div:nth-child(4) {
+  height: 255px;
+}
+
+.section-main__info-summary .info-summary__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 36px;
+  text-align: center;
+  height: 95px;
+}
+.section-main__info-summary .info-summary__header img {
+  width: 165px;
+}
+.section-main__info-summary .info-summary__temperature-label, .section-main__info-summary .info-summary__humidity-label, .section-main__info-summary .info-summary__wind-speed-label {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.info-card {
+  width: 57px;
+  height: 94px;
+  background-color: #85b7ba;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px 5px;
+}
+.info-card img {
+  width: 60px;
+}
+
+.info-summary__footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 20px;
+}
+
+.ol-viewport {
+  border-radius: 30px;
+}
+.ol-zoom {
+  display: none;
+}
+.ol-uncollapsible {
+  display: none !important;
+}
+.ol-collapsed button {
+  display: none !important;
+}
+
+.wrapper-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-overview ul {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 20px;
+}
+.wrapper-overview ul li {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.wrapper-overview ul .active {
+  background-color: #fff;
+  color: black;
+}
+
+#myGraphWeather {
+  height: 226px !important;
+}

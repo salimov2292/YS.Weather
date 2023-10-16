@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather</title>
+		<link rel="icon" href="./assets/icon-weather.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<nav class="nav">
+				<ul class="nav__menu">
+					<li class="nav__menu__item"><img src="./assets/profile-avatar.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/user.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/bell.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/app-store.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/compass.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/pin.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/star.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/settings.png" alt="" /></li>
+					<li class="nav__menu__item"><img src="./assets/shutdown.png" alt="" /></li>
+				</ul>
+			</nav>
+			<section class="section">
+				<div class="section-main__panel">
+					<h2 class="section-main__panel__title">Пятница, 22 сентября, 2023</h2>
+					<div class="section-main__panel__group">
+						<div class="section-main__panel__group__search">
+							<img
+								src="./assets/search-icon.png"
+								alt="icon"
+								class="section-main__panel__group__search__icon"
+							/>
+							<input
+								type="text"
+								class="section-main__panel__group__search__input"
+								placeholder="Введите название города"
+							/>
+						</div>
+						<div class="section-main__panel__group__language">
+							<select id="language-select">
+								<option value="RU">RU</option>
+								<option value="ENG">ENG</option>
+							</select>
+						</div>
+						<div class="section-nav__toggle">
+							<span class="section-toggle">
+								<input type="radio" id="fahrenheit" name="toggle" value="celsius" checked />
+								<label for="fahrenheit" id="labelFahrenheit">C°</label>
+								<input type="radio" id="celsius" name="toggle" value="fahrenheit" />
+								<label for="celsius" id="labelCelsius">F°</label>
+								<span class="switch"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="section-main__info">
+					<div class="section-main__info-summary">
+						<div class="info-summary__header">
+							<img
+								src="http://openweathermap.org/img/wn/02d@4x.png"
+								alt="Weather Status"
+								class="info-summary__weather-icon"
+							/>
+							<span class="info-summary__city-name">Москва</span>
+							<span class="info-summary__temperature">
+								23°
+								<div class="info-summary__temperature-label">Температура</div>
+							</span>
+							<span class="info-summary__humidity">
+								24%
+								<div class="info-summary__humidity-label">Влажность</div>
+							</span>
+							<span class="info-summary__wind-speed">
+								13 km/h
+								<div class="info-summary__wind-speed-label">Скорость ветра</div>
+							</span>
+						</div>
+						<div class="info-summary__footer">
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+							<div class="info-card">
+								<div class="info-card__time">10am</div>
+								<div class="info-card__image">
+									<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+								</div>
+								<div class="info-card__temperature">21°</div>
+							</div>
+						</div>
+					</div>
+					<div id="map" class="section-main__info--map"></div>
+					<div class="section-main__info--overview">
+						<div class="wrapper-overview">
+							<div class="section-main__header">Статистика</div>
+							<ul class="section-main__tabs">
+								<li class="section-main__tab active">Влажность</li>
+								<li class="section-main__tab">UV-индекс</li>
+								<li class="section-main__tab">Ливни</li>
+								<li class="section-main__tab">Давление</li>
+							</ul>
+						</div>
+						<canvas id="myGraphWeather"></canvas>
+					</div>
+					<div class="section-main__info--forecast"></div>
+				</div>
+			</section>
+		</div>
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>
