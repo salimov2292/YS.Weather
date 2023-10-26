@@ -6,9 +6,8 @@ import { fromLonLat } from "ol/proj";
 import { apply } from "ol-mapbox-style";
 
 export function initializeMap() {
-	const styleURL = "mapbox://styles/ys2292/clnbof34y01tc01qn73gog514";
-	const accessToken =
-		"pk.eyJ1IjoieXMyMjkyIiwiYSI6ImNsbmJvOWk5cDBndWUydXAxN2pxanAxaWQifQ.qajnjf6LEtFBFVAfbtd6pg";
+	const styleURL = "mapbox://styles/ys2292/clo1fbo2w00a501qx94k1apli";
+	const accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
 	const mapPromise = apply("map", styleURL, {
 		accessToken: accessToken,
@@ -24,7 +23,9 @@ export function initializeMap() {
 
 		const weatherLayer = new TileLayer({
 			source: new XYZ({
-				url: "https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=8c0e8bacb292bbcbc4e84c496158d786",
+				url: `https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=${
+					import.meta.env.VITE_OPENWEATHERMAP_API_KEY
+				}`,
 				attributions: ['Weather data © <a href="https://openweathermap.org/">OpenWeatherMap</a>'],
 			}),
 			opacity: 0,
